@@ -1,0 +1,25 @@
+.letter {
+    background-color: $primary;
+    box-shadow: 0 15px 25px rgba($black, .35);
+
+    background: 3rem;
+    padding: 5rem;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &__title {
+        display: block;
+        text-align: center;
+        font-size: 2.1rem;
+        color: #fff;
+        margin-bottom: 5rem;
+    @include breakpoint ($mobile-bp) {
+        margin-bottom: 2rem;
+        padding: 3rem;
+    }    
+    }
+    p {
+        display: block;
+        text-align: center;
+    }
+}

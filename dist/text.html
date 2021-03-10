@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Мой Блог</title>
+</head>
+<body >
+
+    <div class="page" id="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="post.html" class="nav__link has-subnav">Обо мне</a>
+        
+                            <ul class="subnav" >
+                                <li >
+                                    <a class="subnav__link" href="cv.html">CV</a>
+                                </li>
+                                <li >
+                                    <a class="subnav__link" href="resume.html">Моё резюме</a>
+                                </li>
+                                <li >
+                                    <a class="subnav__link" href="letter.html">Мотивационное письмо</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="text.html" class="nav__link">FAQ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="works.html" class="nav__link">Мои работы</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <button class="burger" type="button" id="sidebarToggle">
+                    <span>Открыть навигацию</span>
+                </button>
+        
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item" >
+                            <a href="profile.html" class="nav__link">Профиль</a>
+                        </li>
+                        <li class="nav__item" >
+                            <a href="#" class="nav__link">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search" action="search.html" method="GET">
+                    <input class="search__input" type="text" placeholder="Поиск по блогу">
+                </form>
+            </div>
+        
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__header">
+                <img src="assets/images/sidebar-header.jpg" alt="">
+            </div>
+            <div class="sidebar__content">
+                <div class="profile">
+                    <img class="profile__avatar" src="assets/images/me.jpg" alt="">
+                    <div class="profile__header">
+                        <div class="profile__name">Артур Бондаренко</div>
+                        <div class="profile__prof">Блог дилетанта Front-end разработчика</div>
+                    </div>
+        
+                  
+        
+                <ul class="social">
+                    <li class="social__item">
+                        <a href="https://www.instagram.com/p_u_s_s_y_k_i_n_g_6_9/" class="social__link" target="blank">
+                            <img src="assets/images/instagram.svg" alt="Артур Бондаренко Instagram">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://vk.com/id120654150" class="social__link" target="blank">
+                            <img src="assets/images/vk.svg" alt="Артур Бондаренко VK">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://github.com/arthurBondarenko" class="social__link" target="blank">
+                            <img src="assets/images/github.svg" alt="Артур Бондаренко Github">
+                        </a>
+                    </li>
+                </ul>
+                    <div class="profile__text">
+                        <p>Начинающий, юный Front-end разработчик. Практика верстки сайтов. Созданием сайтов занимаюсь с...сейчас.
+                        Работал там где лучше не работать. Дилетант широкого профиля</p>
+                    </div>
+        
+                    <nav class="nav nav--mobile">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="post.html" class="nav__link has-subnav">Обо мне</a>
+            
+                                <ul class="subnav" >
+                                    <li >
+                                        <a class="subnav__link" href="cv.html">CV</a>
+                                    </li>
+                                    <li >
+                                        <a class="subnav__link" href="resume.html">Моё резюме</a>
+                                    </li>
+                                    <li >
+                                        <a class="subnav__link" href="letter.html">Мотивационное письмо</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a href="text.html" class="nav__link">FAQ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="works.html" class="nav__link">Мои работы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="profile.html" class="nav__link">Профиль</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Выйти</a>
+                            </li>
+                        </ul>
+                    </nav>  
+                </div> <!-- /.sidebar__profile -->
+            </div> <!-- /.sidebar__content -->
+            <div class="sidebar__footer">
+                <a class="btn btn--red" href="works.html">Мои работы</a>
+                <button data-modal="contact-modal" class="btn btn--blue" type="button">Написать мне</button>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                
+                <article class="post">
+                    <div class="post__actions">
+                        <a href="index.html">Вернуться назад</a>
+                        <a href="#">
+                            поделиться
+                            <img class="post__actions-icon" src="assets/images/share.svg" alt="поделиться">
+                        </a>
+                    </div>
+                    <div class="post__header post__header--open" >
+                        <h1 class="post__title post__title--mb0">
+                            Вопросы которые Вы бы хотели задать, но боялись
+                        </h1>
+                
+                    </div>
+                
+                    <div class="post__content">
+                        <div class="post__text">
+                            <h2>Что Вы хотите?</h2>
+                            <p>Хочу влиться в сферу веб разработки</p>
+                            <span class="bottom__line"></span>   
+                
+                
+                            <h2>Почему мечтаете сменить свою работ?</h2>
+                            <p>Отсутствие получения новых навыков и знаний</p>
+                            <span class="bottom__line"></span>   
+                
+                
+                            <h2>Учитесь ли вы где-то?</h2>
+                            <p> Juridiska koledža - Компьютерные системы и администрирование компьютерных сетей </p>
+                            <span class="bottom__line"></span>   
+                
+                            <h2>Какой стек технологий вы знаете?</h2>
+                            <p>HTML5 (PUG),CSS3(SCSS,flexbox,grid),Gulp, Git, bootstrap</p>
+                            <span class="bottom__line"></span>   
+                
+                            <h2>Где Вы работали до этого?</h2>
+                            <p>Latvijas Dzelzceļš</p>
+                            <span class="bottom__line"></span>   
+                            
+                            <!-- <h3>Title h3</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quibusdam culpa sunt neque architecto sit cum omnis aperiam, mollitia inventore dolorum aut, ea nam quam vitae temporibus deleniti atque tenetur.</p>
+                            <h4>Title h4</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quibusdam culpa sunt neque architecto sit cum omnis aperiam, mollitia inventore dolorum aut, ea nam quam vitae temporibus deleniti atque tenetur.</p> -->
+                            <!-- <img src="assets/images/image.jpg" alt="image"> -->
+                
+                        </div><!--/ post text -->
+                    </div> <!-- post content -->
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content--story">
+            <video poster="https://placehold.it/420x580" class="modal__video" src=""></video>
+        </div>
+    </div>
+    <div class="modal" id="contact-modal">
+        <div class="modal__content modal__content--content">
+    
+            <?php
+            //проверяем, существуют ли переменные в массиве POST
+            if(!isset($_POST['name']) and !isset($_POST['email'])){
+            ?> 
+            <form class="form" action="send.php" method="POST">
+    
+                <div class="form__group form__group--md">
+                    <input type="text" class="form__control" placeholder="Ваше имя" name="name" required >
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group form__group--md">
+                    <input type="email" class="form__control" placeholder="Ваш e-mail" name="email" required >
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group form__group--md">
+                    <textarea class="form__control form__control--textarea"  placeholder="Текст сообщения"></textarea>
+                    <span class="form__line"></span>
+                </div>
+    
+    
+    
+                <div class="form__footer">
+                    <div class="form__group form__group--md">  
+                        <button value="Отправить" class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+                    </div>
+                </div>
+            </form> 
+            <?php
+            } else {
+            //показываем форму
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $name = htmlspecialchars($name);
+            $email = htmlspecialchars($email);
+            $name = urldecode($name);
+            $email = urldecode($email);
+            $name = trim($name);
+            $email = trim($email);
+            if (mail("artur36@inbox.lv", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: НУЖЕН ДОМЕН@mail.ru \r\n")){
+            echo "Сообщение успешно отправлено";
+            } else {
+            echo "При отправке сообщения возникли ошибки";
+                    }
+                }
+            ?>
+    
+            
+             
+    
+                    
+    
+    
+            <ul class="modal__footer">
+                <li>
+                e-mail: <a href="mailto:artur36@inbox.lv">artur36@inbox.lv</a></li>
+                <li>тел: <a href="tel:+37120476819">+371 20476819</a></li>
+            </ul>
+    
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">
+            </button>
+    
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal__content">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">
+            </button>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="https://www.instagram.com/p_u_s_s_y_k_i_n_g_6_9/" class="social__link">
+                        <img src="assets/images/share/facebook.svg" alt="">
+                    </a>
+                </li>
+    
+                <li class="social__item">
+                    <a href="https://vk.com/id120654150" class="social__link" >
+                        <img src="assets/images/share/vk.svg" alt="">
+                    </a>
+                </li>
+    
+                <li class="social__item">
+                    <a href="https://github.com/arthurBondarenko" class="social__link">
+                        <img src="assets/images/share/twitter.svg" alt="">
+                    </a>
+                </li>
+    
+                <li class="social__item">
+                    <a href="https://github.com/arthurBondarenko" class="social__link">
+                        <img src="assets/images/share/copy.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

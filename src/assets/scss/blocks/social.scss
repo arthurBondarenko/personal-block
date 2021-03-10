@@ -1,0 +1,20 @@
+.social {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.social__item {
+    margin: 0 .75rem;
+}
+.social__link img {
+    width: 25px;
+    height: 25px;
+    transition: transform .8s ease-in-out;
+    &:hover {
+        transform: rotate(360deg);
+    }
+}

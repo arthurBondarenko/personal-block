@@ -1,0 +1,68 @@
+<div class="modal" id="contact-modal">
+    <div class="modal__content modal__content--content">
+
+        <?php
+        //проверяем, существуют ли переменные в массиве POST
+        if(!isset($_POST['name']) and !isset($_POST['email'])){
+        ?> 
+        <form class="form" action="send.php" method="POST">
+
+            <div class="form__group form__group--md">
+                <input type="text" class="form__control" placeholder="Ваше имя" name="name" required >
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group form__group--md">
+                <input type="email" class="form__control" placeholder="Ваш e-mail" name="email" required >
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--md">
+                <textarea class="form__control form__control--textarea"  placeholder="Текст сообщения"></textarea>
+                <span class="form__line"></span>
+            </div>
+
+
+
+            <div class="form__footer">
+                <div class="form__group form__group--md">  
+                    <button value="Отправить" class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+                </div>
+            </div>
+        </form> 
+        <?php
+        } else {
+        //показываем форму
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $name = htmlspecialchars($name);
+        $email = htmlspecialchars($email);
+        $name = urldecode($name);
+        $email = urldecode($email);
+        $name = trim($name);
+        $email = trim($email);
+        if (mail("artur36@inbox.lv", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: НУЖЕН ДОМЕН@mail.ru \r\n")){
+        echo "Сообщение успешно отправлено";
+        } else {
+        echo "При отправке сообщения возникли ошибки";
+                }
+            }
+        ?>
+
+        
+         
+
+                
+
+
+        <ul class="modal__footer">
+            <li>
+            e-mail: <a href="mailto:artur36@inbox.lv">artur36@inbox.lv</a></li>
+            <li>тел: <a href="tel:+37120476819">+371 20476819</a></li>
+        </ul>
+
+        <button class="modal__close" type="button">
+            <img src="assets/images/close.svg" alt="Закрыть">
+        </button>
+
+    </div>
+</div>

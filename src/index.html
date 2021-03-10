@@ -1,0 +1,175 @@
+---
+layout: default
+title: Home
+---
+
+<!-- stories-->
+<div class="stories">
+    <div class="stories__item" data-modal="story-modal">
+        <img class="stories__preview" src="assets/images/stories/stories-1.jpg" alt="">
+        <div class="stories__title">Кот</div>
+        <time class="stories__date" datetime="2021-02-03 15:25">3.02.2021</time>    
+    </div>
+    <div class="stories__item" data-modal="story-modal">
+        <img class="stories__preview" src="assets/images/stories/stories-2.jpg" alt="">
+        <div class="stories__title"> Ещё кот </div>
+        <time class="stories__date" datetime="2021-02-03 15:25">3.02.2021</time>    
+    </div>
+    <div class="stories__item" data-modal="story-modal"> 
+        <img class="stories__preview" src="assets/images/stories/stories-3.jpg" alt="">
+        <div class="stories__title"> Котов мало не бывает </div>
+        <time class="stories__date" datetime="2021-02-03 15:25">3.02.2021</time>    
+    </div>
+    <div class="stories__item" data-modal="story-modal">
+        <img class="stories__preview" src="assets/images/stories/stories-4.jpg" alt="">
+        <div class="stories__title">  Не кот</div>
+        <time class="stories__date" datetime="2021-02-03 15:25">3.02.2021</time>    
+    </div>
+</div> <!-- /stories end-->
+
+
+<!-- add post-->
+
+<div class="add-post">
+    <form class="add-post__form" action="/" method="POST">
+        <textarea data-autoresize class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь"></textarea>
+        <div class="add-post__form-actions"> 
+            <label class="add-post__file" for="add-post-file">
+                <input type="file" id="add-post-file">
+            </label>
+            <button class="add-post__send" type="submit">
+                <img src="assets/images/send.svg" alt="Отправить">
+            </button>
+        </div>  
+    </form>
+</div>
+
+<div class="post">
+    <div class="post__content">
+        <p class="post__description">
+            Поздравляю, Вы попали на этот сайт, значит произошло чудо или вы оказались на самом дне интернета
+        </p>
+    </div>
+
+    <div class="post__footer">
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="2021-03-02 12:22">02.03.2021</time>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /.post -->
+
+<article class="post">
+    <div class="post__header post__header--preview">
+        <a href="post.html">
+            <img class="post__preview" src="assets/images/post-2.jpg" alt="Как писать код быстро и безболезненно">
+        </a>
+    </div>
+
+    <div class="post__content">
+        <h2 class="post__title">
+            <a href="post.html">Как писать код быстро и безболезненно?</a>
+        </h2>
+        <p class="post__description">
+            Писать не мне
+        </p>
+    </div>
+
+    <div class="post__footer">
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="2021-03-02 12:22">02.03.2021</time>
+            </li>
+
+            <li class="post__data-item">
+                <a href="post.html">Создание сайтов</a>
+            </li>
+        </ul>
+        <a href="post.html" class="post__read">Читать</a>
+    </div>
+</article>
+<!-- /.post -->
+
+
+<article class="post">
+    <div class="post__header">
+        <div class="embed">
+            <iframe src="https://www.youtube.com/embed/7HotoPB7Mis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="post__content">
+        <h2 class="post__title">
+            <a href="post.html">Хоть на котика посмотрите</a>
+        </h2>
+
+    </div>
+
+    <div class="post__footer">
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="2021-03-02 12:22">02.03.2021</time>
+            </li>
+
+            <li class="post__data-item">
+                <a href="post.html"> Котики </a>
+            </li>
+        </ul>
+        <a href="post.html" class="post__read">Оставить комментарий</a>
+    </div>
+</article>
+<!-- /.post -->
+
+<article class="post">
+    <div class="post__header post__header--preview">
+        <a href="post.html">
+            <img class="post__preview" src="assets/images/js.jpg" alt="Как я сходил на FrontEnd conf 2021">
+        </a>
+    </div>
+
+    <div class="post__content">
+        <h2 class="post__title">
+            <a href="post.html">Как я пишу код?</a>
+        </h2>
+        <p class="post__description">
+            В это конечно сложно поверить и многим может показаться невороятным,но это так. 
+            Я код пишу руками, если не верите спросите у моей мамы.
+        </p>
+    </div>
+
+    <div class="post__footer">
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="2021-03-02 12:22">02.03.2021</time>
+            </li>
+
+            <li class="post__data-item">
+                <a href="#">статья </a>
+            </li>
+        </ul>
+        <a href="#" class="post__read">Читать</a>
+    </div>
+</article>
+<!-- /.post -->
+
+<!-- pagination -->
+<ul class="pagination">
+    <li class="pagination__item" > 
+        <a class="pagination__link" href="#">&lt;</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link active" href="#">1</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link " href="#">2</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link" href="#">3</a>
+    </li>
+    <li class="pagination__item"> 
+        <a class="pagination__link" href="#">&gt;</a>
+    </li>
+</ul>
+<!-- /.pagination -->
